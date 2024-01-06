@@ -1,0 +1,50 @@
+.contact-box{
+    background-color: #c0c0c0;
+    position: none;
+    top: 50%;
+    left: 50%;
+    
+    border-radius: 5px;
+    padding: 0;
+}
+.contact-ic-box{
+    display: flex;
+    align-content: stretch;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+} 
+
+
+p{
+    padding-left: 80px;
+}
+
+
+
+.form-box{
+    font-size: 16px;
+}
+
+.unuttum{
+    color: #00aff4;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-button{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
+.iht{
+    color: #72767d;
+    font-size: 14px;
+    line-height: 40px;
+}

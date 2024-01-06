@@ -1,0 +1,84 @@
+#hero{
+    width: 100%;
+    height:  100vh;
+    z-index: 997;
+    background-image: linear-gradient(rgba(0,5,200,0),rgba(255, 123, 122)),url("../../../assets/images/cooperate.jpg");
+    position: relative;
+    background-size: cover;
+    overflow-x: hidden;
+}
+@media(min-width: 1024){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+@media (max-height: 500px){
+    #hero{
+        height: 150vh;
+    }
+}
+
+#hero .content{
+  margin-top: 9%;
+  margin-left: 9%;
+  color: aliceblue;
+}
+#hero .content h1{
+    font-size: 120px;
+    line-height: 140px;
+    font-weight: 600;
+}
+#hero .content p{
+    max-width: 500px;
+    line-height: 28px;
+    opacity: 0;
+}
+.links{
+    margin-top: 30px;
+    opacity: 0;
+}
+.links a:hover, a:focus{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn{
+    border: 2px solid #fff;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+
+.btn:hover,
+.btn:focus{
+    color: aliceblue;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.slide-left{
+    animation: slideleft 1.5s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+p.slide-left{
+    animation-delay: 1s;
+}
+.links.slide-left{
+    animation-delay: 2s;
+}

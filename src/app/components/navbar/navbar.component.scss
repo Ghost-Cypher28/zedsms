@@ -1,0 +1,50 @@
+
+nav .topnav{
+    margin: 0;
+    justify-content: space-between;
+}
+
+nav .navbar{
+    margin: auto;
+    padding: 3px 15px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.navbar .logo  a{
+    list-style: none;
+    padding: 20px 5px;
+    display: flex;  
+}
+
+nav .navbar ul li{
+    list-style: none;
+    display: inline-flex;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav .navbar ul li a{
+    text-decoration: none;
+    color: none;
+    text-transform: uppercase;
+}
+
+nav .navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #FF7B7A;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav .navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+
+  
